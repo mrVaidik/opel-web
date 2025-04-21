@@ -112,7 +112,7 @@ export async function POST(req: NextRequest, { params }: { params: { id: string 
       const updateKB = await axios.request(options)
       console.log(updateKB.data)
     } catch (e) {
-      console.error("Voiceflow API error:")
+      console.error("Voiceflow API error:", e)
       return NextResponse.json({ status: 500, error: "Voiceflow error" })
     }
 
