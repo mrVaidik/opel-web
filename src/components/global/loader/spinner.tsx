@@ -24,3 +24,47 @@ export const Spinner = ({ color }: Props) => {
     </div>
   )
 }
+
+
+
+// src/components/global/loader/Loader.tsx
+
+// import React from 'react'
+// import { MagnifyingGlass } from 'react-loader-spinner'
+
+// interface LoaderProps {
+//   visible: boolean
+//   height?: string
+//   width?: string
+//   glassColor?: string
+//   color?: string
+// }
+
+// const Spinner: React.FC<LoaderProps> = ({
+//   visible,
+//   height = '80',
+//   width = '80',
+//   glassColor = '#c0efff',
+//   color = '#e15b64',
+// }) => {
+//   return (
+//     <>
+//       {visible && (
+//         <div className="flex h-screen w-full items-center justify-center">
+//           <MagnifyingGlass
+//             visible={visible}
+//             height={height}
+//             width={width}
+//             ariaLabel="magnifying-glass-loading"
+//             wrapperStyle={{}}
+//             wrapperClass="magnifying-glass-wrapper"
+//             glassColor={glassColor}
+//             color={color}
+//           />
+//         </div>
+//       )}
+//     </>
+//   )
+// }
+
+// export default Spinner

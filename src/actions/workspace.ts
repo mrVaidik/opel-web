@@ -437,7 +437,7 @@ export const editVideoInfo = async (
 //     })
 
 //     const videos = await myWixClient.items
-//       .queryDataItems({
+//        .queryDataItems({
 //         dataCollectionId: 'opal-videos',
 //       })
 //       .find()
@@ -485,41 +485,41 @@ export const editVideoInfo = async (
 
 
 
-export const getWixContent = async () => {
-  try {
-    const myWixClient = createClient({
-      modules: { items },
-      auth: OAuthStrategy({
-        clientId: process.env.WIX_OAUTH_KEY as string,
-      }),
-    });
+// export const getWixContent = async () => {
+//   try {
+//     const myWixClient = createClient({
+//       modules: { items },
+//       auth: OAuthStrategy({
+//         clientId: process.env.WIX_OAUTH_KEY as string,
+//       }),
+//     });
 
-    const videos = await myWixClient.items
-      .query({
-        dataCollectionId: 'opal-videos',
-      })
-      .find();
+//     const videos = await myWixClient.items
+//       .query({
+//         dataCollectionId: 'opal-videos',
+//       })
+//       .find();
 
-    const videoIds = videos.items.map((v) => v.data?.title);
+//     const videoIds = videos.items.map((v) => v.data?.title);
 
-    const video = await client.video.findMany({
-      where: {
-        id: {
-          in: videoIds,
-        },
-      },
-      // ...rest unchanged
-    });
+//     const video = await client.video.findMany({
+//       where: {
+//         id: {
+//           in: videoIds,
+//         },
+//       },
+//       // ...rest unchanged
+//     });
 
-    if (video && video.length > 0) {
-      return { status: 200, data: video };
-    }
-    return { status: 404 };
-  } catch (error) {
-    console.log(error);
-    return { status: 400 };
-  }
-};
+//     if (video && video.length > 0) {
+//       return { status: 200, data: video };
+//     }
+//     return { status: 404 };
+//   } catch (error) {
+//     console.log(error);
+//     return { status: 400 };
+//   }
+// };
 
 
 export const howToPost = async () => {
