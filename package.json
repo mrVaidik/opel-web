@@ -87,7 +87,6 @@
     "typescript": "^5"
   },
   "description": "This project is licensed for educational use only. For commercial use, a license must be purchased. You can obtain the license here: [Code License](https://webprodigies.com/license/?am_id=syednauroz5153).",
-  "main": "src/middleware.ts",
   "author": "VAIDIK PATIL",
   "license": "ISC"
 }
