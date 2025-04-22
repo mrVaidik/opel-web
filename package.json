@@ -88,5 +88,14 @@
   },
   "description": "This project is licensed for educational use only. For commercial use, a license must be purchased. You can obtain the license here: [Code License](https://webprodigies.com/license/?am_id=syednauroz5153).",
   "author": "VAIDIK PATIL",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "src/middleware.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrVaidik/opel-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrVaidik/opel-web/issues"
+  },
+  "homepage": "https://github.com/mrVaidik/opel-web#readme"
 }
