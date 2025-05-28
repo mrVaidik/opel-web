@@ -16,7 +16,7 @@ const LandingPageNavBar = (props: Props) => {
           alt="logo"
           src="/opal-logo.svg"
           width={40}
-          height={40}
+          height={40} className='hover:animate-spin-fidget transition-transform'
         />
         Opel
       </div>
