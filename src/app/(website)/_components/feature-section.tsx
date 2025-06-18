@@ -32,7 +32,7 @@ export function FeatureSection() {
           </p>
           <div className="flex justify-center">
             <Image
-              src="/opel.webp"
+              src="/opel.png"
               alt="Opal video recording interface"
               width={800}
               height={450}
