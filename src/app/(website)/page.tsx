@@ -23,9 +23,11 @@ export default function Home() {
             <ArrowRight className="ml-2" />
             </Button>
             </Link>
-            <Button size="lg" variant="outline">
+            <Link href="https://youtu.be/Wr9Uuw2f1a0">
+              <Button size="lg" variant="outline">
             Watch Demo
             </Button>
+            </Link>
 
             <section className='container mx-auto px-4 py-20'>
               <h2 className='text-3xl font-bold mb-8 text-center'>Why choose Opel?</h2>
